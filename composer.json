@@ -1,0 +1,23 @@
+{
+    "name": "involve-gmbh/statamic-entries-filter",
+    "require" : {
+        "php": "^8.1",
+        "statamic/cms": "3.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Involve\\StatamicEntriesFilter\\": "src"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Entries Filter",
+            "description": "Provides a service to add filters for globally filtering entries so users can only see what you want them to see."
+        },
+        "laravel": {
+            "providers": [
+                "Involve\\StatamicEntriesFilter\\ServiceProvider"
+            ]
+        }
+    }
+}
